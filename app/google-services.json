@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "78802742382",
+    "project_id": "knowsmoto",
+    "storage_bucket": "knowsmoto.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:78802742382:android:da5a823f44b707f5288a7f",
+        "android_client_info": {
+          "package_name": "com.jtdev.knowsalot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMz3WVX2xLB-C-xem-PbmubQ9u8m3Zkns"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

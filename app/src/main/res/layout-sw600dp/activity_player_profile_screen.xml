@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_portrait"
+    tools:context=".AdminIProfileScreen">
+
+    <TextView
+        android:id="@id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:text="Profile Overview"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:fontFamily="@font/irish_grover" />
+
+    <ImageView
+        android:id="@+id/userPic"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/user" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/userPic"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:text="User Name"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/irish_grover"/>
+
+    <TextView
+        android:id="@+id/userEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/userPic"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/userName"
+        android:text="user@gmail.com"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/irish_grover"/>
+
+    <TextView
+        android:id="@+id/changePass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userEmail"
+        android:layout_toEndOf="@+id/userPic"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:clickable="true"
+        android:text="Change Password"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/irish_grover"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/changePass"
+        android:layout_alignStart="@+id/userPic"
+        android:layout_marginTop="50dp"
+        android:text="Progress"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:fontFamily="@font/irish_grover" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="700dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text1"
+        android:layout_above="@+id/homeBtn"
+        android:layout_margin="30dp"
+        android:padding="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/cream" >
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/analyticsPie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/homeBtn"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+       android:layout_above="@+id/logoutBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/irish_grover"
+        android:background="@drawable/button_bg"
+        android:text="Home"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_bg"
+        android:textAllCaps="false"
+        android:fontFamily="@font/irish_grover"
+        android:text="Logout"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+
+</RelativeLayout>

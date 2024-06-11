@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_landscape"
+    tools:context=".HomeScreen">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="500dp"
+        android:fontFamily="@font/irish_grover"
+        android:gravity="center"
+        android:text="Knows A 
+        Lot"
+        android:textColor="@color/white"
+        android:textSize="100sp" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/light_bulb" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="300dp"
+        android:background="@drawable/button_bg"
+        android:textAllCaps="false"
+        android:fontFamily="@font/irish_grover"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:cornerRadius="25dp" />
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="190dp"
+        android:background="@drawable/button_bg"
+        android:textAllCaps="false"
+        android:fontFamily="@font/irish_grover"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:cornerRadius="25dp" />
+
+</RelativeLayout>

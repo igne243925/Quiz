@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Knows A Lot</string>
+    <string name="score_format">Your score: %1$d / %2$d</string>
+</resources>
